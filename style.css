@@ -1,0 +1,365 @@
+:root {
+        --primaryColor: white;
+        --secondaryColor: black;
+        --activeColor: #ff0048;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        transition: 0.4s ease-in-out;
+}
+
+body {
+        color: var(--primaryColor);
+        font-family: 'poppins',
+                cursive;
+        font-weight: lighter;
+        background: linear-gradient(-45deg, #000000, #d1cdcdb1, #0000006e, #ffffff);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        margin: auto;
+}
+
+a {
+        color: var(--secondaryColor);
+        text-decoration: none;
+
+}
+
+button {
+        background: none;
+        border: none;
+        color: var(--primaryColor);
+        font-size: 25px;
+        padding-top: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+}
+
+.disable_1 {
+        pointer-events: none;
+        color: var(--activeColor);
+        font-size: 40px;
+        animation: zoom-in-zoom-out 5s ease-out infinite;
+}
+
+.disable {
+        pointer-events: none;
+        color: var(--activeColor);
+}
+
+.setting {
+        color: var(--activeColor);
+}
+
+.setting .fa-cog {
+        animation: rotation 0.5s infinite linear;
+}
+
+.fa-cog:hover {
+        color: rgb(109, 11, 11);
+        animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+input {
+        background: none;
+        border: 2px solid var(--primaryColor);
+        border-radius: 10px;
+        padding: 10px;
+        width: 70%;
+        color: var(--primaryColor);
+        font-family: 'poppins',
+                cursive;
+        font-weight: bolder;
+}
+
+.container {
+        width: 1200px;
+        padding: 30px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.recipe {
+        width: 375px;
+        background-color: var(--secondaryColor);
+        border-radius: 10px;
+        /* height: 93vh; */
+}
+
+.recip {
+        width: 375px;
+        background-color: var(--secondaryColor);
+        border-radius: 10px;
+}
+
+.recipe-head {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
+        text-align: center;
+        position: relative;
+}
+
+.buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 50px;
+        position: relative;
+}
+
+.fav-container {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        padding: 20px 0;
+}
+
+.fav-items {
+        display: flex;
+        padding-top: 10px;
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+}
+
+.fav-items::-webkit-scrollbar {
+        width: 0 !important
+}
+
+.fav-item {
+        margin-left: 5px;
+        min-width: 60px;
+        max-width: 90px;
+        height: 90px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        position: relative;
+}
+
+.fav-item h5 {
+        font-size: 15px;
+}
+
+.fav-container h3 {
+        font-size: 25px;
+        font-family: 'Bebas Neue',
+                cursive;
+        letter-spacing: 5px;
+}
+
+.favitems {
+        cursor: pointer;
+}
+
+.fav-item img {
+        width: 60px;
+        border-radius: 50%;
+        border: 3px solid var(--primaryColor);
+}
+
+.recipe-body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        /* padding-top: 50px; */
+}
+
+.recipe-body h3 {
+        font-size: 30px;
+        text-transform: capitalize;
+        font-family: 'Comforter Brush',
+                cursive;
+        font-weight: lighter;
+}
+
+.recipe-body img {
+        width: 90%;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        padding-bottom: 5px;
+}
+
+.recipe-footer {
+        width: 100%;
+        margin: auto;
+        padding-bottom: 15px;
+}
+
+#ingr {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        width: 30%;
+        margin: auto;
+        background: rgb(163, 0, 0);
+        color: var(--primaryColor);
+        padding: 5px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-family: 'Bebas Neue',
+                cursive;
+        font-weight: bolder;
+}
+
+
+
+.theme {
+        position: absolute;
+        background-color: var(--activeColor);
+        top: 15%;
+        right: 54%;
+        width: 97px;
+        display: flex;
+        justify-content: space-around;
+        padding: 7px;
+        transition: all 1s ease-in-out;
+}
+
+.theme_main {
+        height: 20px;
+        width: 20px;
+        background-color: black;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-left: 5px;
+}
+
+#dark-mode {
+        background-color: black;
+}
+
+#light-mode {
+        background-color: white;
+}
+
+#manhattan-mode {
+        background-color: #e2af80;
+}
+
+.close {
+        color: #505050;
+        font-size: 30px;
+        position: absolute;
+        top: -15px;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+}
+
+.close:hover {
+        color: var(--activeColor);
+}
+
+.hidden {
+        opacity: 0;
+        display: none !important;
+}
+
+.fav-btn:hover {
+        color: rgb(109, 11, 11);
+        animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+.btn:hover {
+        color: rgb(109, 11, 11);
+        animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+.fav-active {
+        color: var(--activeColor) !important;
+        animation: zoom-in-zoom-out 2s ease-out infinite;
+}
+
+.show-data {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.494);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+}
+
+.data-details {
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: 400px;
+        background-color: var(--secondaryColor);
+        max-height: 100vh;
+        overflow: auto;
+        text-align: justify;
+
+}
+
+.data-header h3 {
+        font-size: 25px;
+        text-align: center;
+}
+
+.data-body img {
+        width: 100%;
+}
+
+
+
+
+/* Animations */
+@keyframes zoom-in-zoom-out {
+        0% {
+                transform: scale(1, 1);
+        }
+
+        50% {
+                transform: scale(1.2, 1.2);
+        }
+
+        100% {
+                transform: scale(1, 1);
+        }
+}
+
+@keyframes rotation {
+        from {
+                -webkit-transform: rotate(0deg);
+        }
+
+        to {
+                -webkit-transform: rotate(359deg);
+        }
+}
+
+@keyframes gradient {
+        0% {
+                background-position: 0% 50%;
+        }
+
+        50% {
+                background-position: 100% 50%;
+        }
+
+        100% {
+                background-position: 0% 50%;
+        }
+}
+
+@media screen and (max-width: 1200px) {
+        .container {
+                width: 90%;
+        }
+}
+
+@media screen and (max-width: 425px) {
+        .recipe {
+                width: 100%;
+        }
+}

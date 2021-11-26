@@ -1,0 +1,9 @@
+:root {
+        --primaryColor: rgb(36, 35, 35);
+        --secondaryColor: #faac62;
+        --activeColor: #a0012e;
+}
+
+body {
+        background: rgba(14, 14, 14, 0.837);
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recipes App</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+        <style>
+                @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Comforter+Brush&family=Poppins:wght@300&display=swap');
+        </style>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="" id="theme-style">
+</head>
+
+<body>
+
+        <div class="container">
+                <div class="recipe" id="recipe">
+                        <div class="recipe-head">
+                                <div class="search">
+                                        <input type="text" id="search-text" />
+                                        <button id="search"><i class="fas fa-search"></i></button>
+                                </div>
+                                <div class="buttons">
+                                        <button id="setting"><i class="fas fa-cog"></i></button>
+                                        <div class="theme hidden" id="theme">
+                                                <div data-mode="dark" id="dark-mode" class="theme_main"></div>
+                                                <div data-mode="light" id="light-mode" class="theme_main"></div>
+                                                <div data-mode="manhattan" id="manhattan-mode" class="theme_main"></div>
+
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="fav-container">
+                                <h3>Favorite Items</h3>
+                                <div class="fav-items">
+
+                                </div>
+                        </div>
+
+                        <div id="meals">
+
+                        </div>
+
+                        <div class="recipe-footer">
+                                <button id="ingr">
+                                        <a href="https://www.themealdb.com/" target="_blank">About Us</a>
+                                </button>
+                        </div>
+
+                </div>
+        </div>
+
+        <div class="show-data hidden" id="show-data">
+
+        </div>
+
+        <script src="script.js" defer></script>
+</body>
+
+</html>
